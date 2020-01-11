@@ -11,15 +11,16 @@ import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import frc.robot.RageVictorSPX;
 
 public class DriveTrain extends SubsystemBase {
   /**
    * Creates a new driveTrain.
    */
-  private WPI_VictorSPX frontLeft;
-  private WPI_VictorSPX frontRight;
-  private WPI_VictorSPX backLeft;
-  private WPI_VictorSPX backRight;
+  private RageVictorSPX frontLeft;
+  private RageVictorSPX frontRight;
+  private RageVictorSPX backLeft;
+  private RageVictorSPX backRight;
 
   private SpeedControllerGroup leftDrive;
   private SpeedControllerGroup rightDrive;
@@ -30,10 +31,10 @@ public class DriveTrain extends SubsystemBase {
    * <p>Initalizes drive motors and helper classes.</p>
    */
   public DriveTrain() {
-    frontLeft = new WPI_VictorSPX(0);
-    frontRight = new WPI_VictorSPX(1);
-    backLeft = new WPI_VictorSPX(2);
-    backRight = new WPI_VictorSPX(3);
+    frontLeft = new RageVictorSPX(0);
+    frontRight = new RageVictorSPX(1);
+    backLeft = new RageVictorSPX(2);
+    backRight = new RageVictorSPX(3);
 
     leftDrive = new SpeedControllerGroup(frontLeft, backLeft);
     rightDrive = new SpeedControllerGroup(frontRight, backRight);
