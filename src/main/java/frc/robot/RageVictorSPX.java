@@ -65,8 +65,9 @@ public class RageVictorSPX implements SpeedController {
   @Override
   public void stopMotor() {
     motor.stopMotor();
-
   }
+
+  
 
 
 }

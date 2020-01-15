@@ -59,7 +59,6 @@ public class RobotContainer {
 
     // Initialize Gamepads
     driverController = new XboxController(0);
-
     // Configure the button bindings
     
     // Configure default commands
